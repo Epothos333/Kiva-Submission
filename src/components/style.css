@@ -1,0 +1,140 @@
+/* Header */
+
+.Header {
+  background-color: rgb(255,255,255);
+  height: 73px;
+  border-bottom: 0.7px solid rgba(33,33,33, 0.5);
+}
+
+
+/* Breadcrumbs */
+
+.Page-Title {
+  font-size: 3.375rem;
+  margin: 0 0 16px 0;
+}
+
+.Page-Description {
+  max-width: 75%;
+  margin-bottom: 2rem;
+  font-size: 17px;
+  color: rgb(33,33,33);
+  line-height: 25.5px;
+}
+
+/* MediaCard */
+
+.Media-Card {
+  width: 300px;
+  height: 571px;
+  border: 1px solid lightgray;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.Media-Card:hover {
+  box-shadow: 1px 1px 1px rgba(33,33,33, 0.2);
+}
+
+.Media-Card-Info {
+  max-height: 171px;
+  flex: 2; 
+  margin-top: 20px;
+}
+
+.Media-Card-Location {
+  color: rgb(158, 158, 158);
+  font-size: 17px;
+}
+
+.Media-Card-Name {
+  font-size: 24px;
+  color: rgb(43,124,95);
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.Media-Card-Name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Media-Image-Container {
+  background-position: center;
+  background-size: cover;
+  height: 225px;
+}
+
+.Media-Card-Why {
+  margin-bottom: 10px;
+}
+
+.Media-Card-To-Go {
+  color: rgb(41,169,103);
+  font-style: italic;
+  font-size: 14px;
+  margin: 10px 0 15px 0;
+}
+
+.Media-Card-Info-Section {
+  padding: 0 20px;
+}
+
+.Lend-Button {
+  height: 48px;
+  width: 154px;
+  background-color: rgb(45,123,95);
+  border-radius: 14px;
+  border: 0px;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.Lend-Button:hover {
+  cursor: pointer;
+  background-color: rgb(39,112,36);
+}
+
+/* MediaCardContainer */
+
+.Media-Card-Container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+/* Progress Bar */
+
+.Progress-Bar-Container {
+  height: 8px;
+  width: 80%;
+  background-color: #e0e0de;
+  border-radius: 50px;
+}
+
+.Progress-Bar {
+  height: 100%;
+  background-color: rgb(41,169,103);
+  border-radius: inherit;
+  text-align: right;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Media-Card {
+    width: 90%;
+  }
+
+  .Page-Title {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .Bread-Crumbs {
+    width: 90%;
+    margin: 5px auto;
+  }
+}

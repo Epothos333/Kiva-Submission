@@ -5,9 +5,90 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(245,245,245);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Inner-Content {
+  max-width: 61.875rem;
+}
+
+
+.Flex-Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Flex-Column {
+  display: flex;
+  flex-direction: column;
+}
+
+.J-S-B {
+  justify-content: space-between;
+}
+
+.J-C {
+  justify-content: center;
+}
+
+.J-S-A {
+  justify-content: space-around;
+}
+
+.J-F-S {
+  justify-content: flex-start;
+}
+
+.J-F-E {
+  justify-content: flex-end;
+}
+
+.A-S-B {
+  align-items: space-between;
+}
+
+.A-F-E {
+  align-items: flex-end;
+}
+
+.A-F-S {
+  align-items: flex-start;
+}
+
+.A-C {
+  align-items: center;
+}
+
+.A-S-F-E {
+  align-self: flex-end;
+}
+
+.A-S-F-S {
+  align-self: flex-start;
+}
+
+.A-S-C {
+  align-self: center;
+}
+
+.Cursor-Pointer {
+  cursor: pointer;
+}
+
+.Full-Width {
+  width: 100%;
+}
+
+.Bold {
+  font-weight: bold;
+}
+
+.para {
+  margin: 0;
+  max-width: 90%;
 }

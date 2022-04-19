@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Breadcrumbs } from "./components/Breadcrumbs";
+import { Header } from "./components/Header";
+import { MediaCardContainer } from "./components/MediaCardContainer";
+import './components/style.css';
 
 function App() {
+  const loading = useSelector(state => state.loans.loading)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{visibility: loading ? 'hidden' : 'visible'}}>
+      <div className="Flex-Column J-F-S A-C">
+      <Header />
+        <div className="Inner-Content Full-Width">
+          <Breadcrumbs />
+          <MediaCardContainer />
+        </div>
+      </div>
     </div>
   );
 }
